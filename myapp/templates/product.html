@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Name</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    max-width: 100%;
+}
+
+.product-info {
+    flex: 1;
+    padding: 0 40px;
+}
+
+.product-info h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.add-to-cart {
+    display: block;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="product-image">
+                <img src="product-image.jpg" alt="Pop Obanai Iguro">
+            </div>
+            <div class="product-info">
+                <h1>Pop Obanai Iguro</h1>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id gravida nisi. Maecenas auctor interdum mi, sit amet sollicitudin est dapibus eu. Nulla ut enim mattis, fermentum justo at, placerat sapien.</p>
+                <p class="product-price">$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Funko Europe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

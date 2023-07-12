@@ -119,31 +119,71 @@
             text-align: center;
             font-size: 14px;
         }
+
+        .search-bar {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .search-bar input[type="text"] {
+        padding: 8px 16px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-bar button {
+        padding: 8px 16px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .search-bar button:hover {
+        background-color: #555;
+    }
         </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funko Europe</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    <header>
-        <nav>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Funko Europe</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <header>
+          <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="/workspaces/funkostore/myapp/templates/product.html">Products</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Funko Europe</h1>
-                <p>Discover the world of Funko collectibles</p>
-                <a href="#" class="btn">Shop Now</a>
+            
+          </nav>
+      </header>
+  
+      <main>
+          <section class="hero">
+              <div class="hero-content">
+                  <h1>Welcome to Funko Europe</h1>
+                  <p>Discover the world of Funko collectibles</p>
+                  <a href="#" class="btn">Shop Now</a>
+              </div>
+          </section>
+  
+          <!-- Adicione a barra de busca abaixo -->
+          <section class="search-bar">
+              <input type="text" placeholder="Search products...">
+              <button>Search</button>
+          </section>
+  
+          <section class="featured-products">
+              <h2>Featured Products</h2>
+              <div class="product-grid">
             </div>
         </section>
 
