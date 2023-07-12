@@ -1,7 +1,90 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu E-commerce</title>
+    <style>
+/* Estilos personalizados para o Meu E-commerce */
 
-{% block content %}
-<div class="container">
-    <h1>Bem-vindo ao meu projeto Django com Bootstrap!</h1>
-</div>
-{% endblock %}
+/* Estilo para o título principal */
+h1 {
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo para o texto de boas-vindas */
+p {
+    color: #666;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #f8f9fa;
+}
+
+/* Estilo para os links na barra de navegação */
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo para o link ativo na barra de navegação */
+.navbar-nav .nav-item.active .nav-link {
+    color: #007bff;
+}
+
+/* Estilo para o conteúdo principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+</style>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Meu E-commerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carrinho</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conta</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container mt-4">
+        <h1>Bem-vindo à nossa loja online!</h1>
+        <p>Encontre os melhores produtos pelo melhor preço.</p>
+        <!-- Adicione os componentes e estilos personalizados do seu site aqui -->
+    </div>
+
+    <!-- Adicione os links para os arquivos JavaScript do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
