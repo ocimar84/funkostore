@@ -1,94 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>/* Reset some default styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        main {
+            padding: 40px;
+        }
+        
+        .hero {
+            background-image: url("hero.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-content {
+            text-align: center;
+            color: #fff;
+        }
+        
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-content p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #555;
+        }
+        
+        .featured-products {
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        .featured-products h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        
+        .product-item {
+            text-align: center;
+        }
+        
+        .product-item img {
+            max-width: 100%;
+        }
+        
+        .product-item h3 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        
+        .product-item p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        
+        footer {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+        }
+        </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu E-commerce</title>
-    <style>
-/* Estilos personalizados para o Meu E-commerce */
-
-/* Estilo para o título principal */
-h1 {
-    color: #333;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-/* Estilo para o texto de boas-vindas */
-p {
-    color: #666;
-    font-size: 1.125rem;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-/* Estilo para a barra de navegação */
-.navbar {
-    background-color: #f8f9fa;
-    padding: 1rem 2rem;
-}
-
-/* Estilo para os links na barra de navegação */
-.navbar-nav .nav-link {
-    color: #333;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* Estilo para o link ativo na barra de navegação */
-.navbar-nav .nav-item.active .nav-link {
-    color: #007bff;
-}
-
-/* Estilo para o conteúdo principal */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-}
-
-</style>  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Funko Europe</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Meu E-commerce</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Produtos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Carrinho</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Conta</a>
-                </li>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Conteúdo principal -->
-    <div class="container mt-4">
-        <h1>Bem-vindo à nossa loja online!</h1>
-        <p>Encontre os melhores produtos pelo melhor preço.</p>
-        <!-- Adicione os componentes e estilos personalizados do seu site aqui -->
-    </div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Funko Europe</h1>
+                <p>Discover the world of Funko collectibles</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </section>
 
-    <!-- Adicione os links para os arquivos JavaScript do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Add your featured product items here -->
+                <div class="product-item">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Price: $19.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="product2.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>Price: $24.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="product3.jpg" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>Price: $14.99</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Funko Europe. All rights reserved.</p>
+    </footer>
 </body>
 </html>
