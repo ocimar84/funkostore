@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop Name</title>
+    <title>Funko Europe - Contato</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        * {
+    * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -100,8 +100,7 @@ footer {
     text-align: center;
     font-size: 14px;
 }
-
-    </style>
+</style>
 </head>
 <body>
     <header>
@@ -116,21 +115,24 @@ footer {
     </header>
 
     <main>
-        <section class="product-details">
-            <div class="product-image">
-                <img src="product-image.jpg" alt="Pop Obanai Iguro">
-            </div>
-            <div class="product-info">
-                <h1>Pop Obanai Iguro</h1>
-                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id gravida nisi. Maecenas auctor interdum mi, sit amet sollicitudin est dapibus eu. Nulla ut enim mattis, fermentum justo at, placerat sapien.</p>
-                <p class="product-price">$19.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-        </section>
+        <h1>Contact Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis consequat ligula, eu sodales urna tincidunt vel.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </main>
 
     <footer>
-        <p>&copy; 2023 Funko Europe. All rights reserved.</p>
+        &copy; 2023 Funko Europe. All rights reserved.
     </footer>
 </body>
 </html>
