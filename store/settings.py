@@ -32,6 +32,9 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '8000-ocimar84-funkostore-mnycibewn5t.ws-eu101.gitpod.io',
+    '8000-ocimar84-funkostore-el5ag6ofbuc.ws-eu101.gitpod.io',
+    'outrohost.com',
+    'maisumhost.com',
 ]
 
 
