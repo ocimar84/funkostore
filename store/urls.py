@@ -5,5 +5,6 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('products/', views.products, name='products'),
     path('categories/', views.categories, name='categories'),
+    path('contact/', views.contact, name='contact'),
     # outras URLs do aplicativo, se houver
 ]

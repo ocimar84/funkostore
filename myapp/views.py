@@ -9,3 +9,6 @@ def products(request):
 def categories(request):
     return render(request, 'categories.html')
 
+def contact(request):
+    # Your view logic goes here
+    return render(request, 'contact.html')
