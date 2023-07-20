@@ -12,3 +12,7 @@ def categories(request):
 def contact(request):
     # Your view logic goes here
     return render(request, 'contact.html')
+
+def login(request):
+    # Your view logic goes here
+    return render(request, 'login.html')

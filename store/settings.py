@@ -50,6 +50,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap4',
     'myapp',
+    'django.contrib.sites',  # Certifique-se de que esta linha esteja presente
+    'allauth',
+    'allauth.account',
     
 ]
 
