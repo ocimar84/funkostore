@@ -34,6 +34,7 @@ ALLOWED_HOSTS = [
     '8000-ocimar84-funkostore-mnycibewn5t.ws-eu101.gitpod.io',
     '8000-ocimar84-funkostore-el5ag6ofbuc.ws-eu101.gitpod.io',
     '8000-ocimar84-funkostore-9u8r396jrm5.ws-eu102.gitpod.io',
+    '8000-ocimar84-funkostore-v601zcgffde.ws-eu102.gitpod.io',
     'outrohost.com',
     'maisumhost.com',
 ]
@@ -129,6 +130,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+USE_X_FORWARDED_HOST = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
@@ -139,3 +141,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
