@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
     <style>
-        /* ... (seus estilos existentes) */
+.shop-now-image {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza a partir do centro da imagem */
+    z-index: 1; /* Garante que a imagem fique acima do botão */
+}
 
 .btn-login {
     display: inline-block;
@@ -169,7 +175,7 @@
         </style>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Funko Europe</title>
+      <title>Funko's Galaxy</title>
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -184,11 +190,12 @@
             <a href="{% url 'login' %}" class="btn-login">Login</a>
           </nav>
       </header>
-  
+      <img src="<img src="/workspaces/funkostore/myapp/templates/image/logofunko.jpg" alt="testando 12346579  descricao da imagem ">
+      " alt="Descrição da imagem">
       <main>
           <section class="hero">
               <div class="hero-content">
-                  <h1>Welcome to Funko Europe</h1>
+                  <h1>Welcome to Funko's Galaxy</h1>
                   <p>Discover the world of Funko collectibles</p>
                   <a href="#" class="btn">Shop Now</a>
               </div>
@@ -230,7 +237,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Funko Europe. All rights reserved.</p>
+        <p>&copy; 2023 Funko's Galaxy. All rights reserved.</p>
     </footer>
 </body>
 </html>
