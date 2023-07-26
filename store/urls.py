@@ -9,3 +9,12 @@ urlpatterns = [
     path('login/', views.login, name='login'),
     path('accounts/', include('allauth.urls')),
 ]
+
+from django.contrib import admin
+from django.urls import path
+
+urlpatterns = [
+    # Outras URLs do seu projeto
+    path('admin/', admin.site.urls),
+    # Mais URLs do projeto, se houver
+]

@@ -26,13 +26,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-w1ujp$pvdg0d)zuebtx0idr5%uuk&q!bc*y*_mx#@a=nz2w9h@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '8000-ocimar84-funkostore-mnycibewn5t.ws-eu101.gitpod.io',
     '8000-ocimar84-funkostore-el5ag6ofbuc.ws-eu101.gitpod.io',
+    '8000-ocimar84-funkostore-9u8r396jrm5.ws-eu102.gitpod.io',
+    '8000-ocimar84-funkostore-v601zcgffde.ws-eu102.gitpod.io',
     'outrohost.com',
     'maisumhost.com',
 ]
@@ -128,13 +130,16 @@ USE_I18N = True
 
 USE_TZ = True
 
+USE_X_FORWARDED_HOST = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
